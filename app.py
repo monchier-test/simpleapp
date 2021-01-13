@@ -1,5 +1,6 @@
 import streamlit as st
 import sys
+import time
 
 st.title("Test App 11")
 
@@ -17,6 +18,7 @@ def worker(arg):
     counter = 1
     while True:
       counter += 1
+      time.sleep(1)
 
 cpus = 3
 
